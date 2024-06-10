@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css" integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/input.css">
+</head>
+<body >
+
+
+
+  
+<button onclick="topFunction()" id="myBtn" class="hidden fixed bottom-5 right-7 z-[10]  border-none text-4xl  text-white cursor-pointer p-4 rounded-full" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+<!-- navbar -->
+<nav class="bg-black  fixed w-full z-20 top-0 start-0   dark:border-gray-600">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="logo.png" class="h-32 w-32" alt="Logo">
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button type="button" class="text-white bg-purple-300 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-800 font-medium rounded-lg text-sm px-4 py-2 text-center  dark:hover:bg-violet-950 ">Hire me</button>
+            <button id="menu-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li class="bottom">
+                    <a href="#home" class="block py-2 px-3 text-white  rounded md:bg-transparent md:text-text-white md:p-0 md:dark:text-white" aria-current="page">Home</a>
+                </li>
+                <li class="bottom">
+                    <a href="#about" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-300 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                </li>
+                <li class="bottom">
+                    <a href="#skills" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-300 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">My skills</a>
+                </li>
+                <li class="bottom">
+                    <a href="#contact" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-300 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+<!-- Hero Section -->
+
+<div class="bg-black py-20 hero"  id="home" >
+    <div class="container mx-auto px-6 md:px-12 mt-48">
+        <div class="flex flex-col md:flex-row items-center ">
+            <div class="over"></div>
+            <div class="md:w-1/2 lg:w-2/3   "  >
+                <h1 class="text-4xl md:text-5xl lg:text-7xl text-white font-bold mb-6">
+                   I am Dinamo <br class="hidden md:block" />
+                    <span class="text-purple-500">Web Developer</span><span>+</span> UX Designer
+                </h1>
+                <p class="text-lg md:text-xl lg:text-2xl text-gray-400 mb-8">
+                    Crafting innovative and responsive websites tailored to your business needs.
+                </p>
+                <div class="flex gap-2">
+                    <a href="#" class="bg-purple-400 hover:bg-purple-900 text-white font-bold py-3 px-6 rounded">Download CV 
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="md:w-1/2 lg:w-1/3  mt-8 md:mt-0 w-full md:w-[55%]">
+                <img src="image1.png" class=""  alt="Hero Image" class="rounded-lg shadow-lg" />
+            </div>
+           
+        </div>
+       
+    </div>
+    <div class="rank">
+
+    </div>
+</div>
+
+
+
+
+
+<!-- Work -->
+<!-- ====== Portfolio Section Start -->
+<section class="py-20 relative bg-black ">
+    <div class="w-full max-w-2xl lg:max-w-7xl px-6 lg:px-8 mx-auto">
+        <h1 class="font-manrope font-medium text-5xl text-white mb-10 max-md:text-center text-center">My Recent Work</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+            <div class="flex items-center flex-col gap-8 w-full group transform hover:scale-95  transition-all duration-200 " >
+                <div class="block  ">
+                    <img src="1.jpg" alt="">
+                </div>
+                <div  class="flex items-center justify-between max-w-[406px] lg:max-w-full w-full lg:px-0  cursor-pointer   hover:bg-purple-700 transition-all duration-200  rounded-2xl p-2">
+                    <div class="block  ">
+                        <h4 class="text-2xl font-manrope font-semibold   text-white mb-1">Sketch</h4>
+                        <p class="font-medium text-lg text-gray-400">Content Design,
+                            Marketing</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="group flex items-center flex-col gap-8 w-full transform hover:scale-95  transition-all duration-200">
+                <div class="block  ">
+                    <img src="2.jpg" alt="">
+                </div>
+                <div class="flex items-center justify-between max-w-[406px] lg:max-w-full w-full cursor-pointer lg:px-0 hover:bg-purple-700 transition-all duration-200  rounded-2xl p-2">
+                    <div class="block">
+                        <h4 class="text-2xl font-manrope font-semibold text-white mb-1">Figma</h4>
+                        <p class="font-medium text-lg text-gray-400">User Interface Design
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div
+                class="group flex items-center flex-col gap-8 w-full md:w-1/2 mx-auto md:col-span-2 lg:col-span-1 lg:w-full transform hover:scale-95  transition-all duration-200">
+                <div class="block  ">
+                    <img src="3.jpg" alt="">
+                </div>
+                <div class="flex items-center justify-between max-w-[406px] lg:max-w-full w-full lg:px-0 cursor-pointer hover:bg-purple-700 transition-all duration-200  rounded-2xl p-2">
+                    <div class="block ">
+                        <h4 class="text-2xl font-manrope font-semibold text-white mb-1">Frame.io</h4>
+                        <p class="font-medium text-lg text-gray-400">User Interface Design
+                        </p>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="over"></div>
+</section>
+                                        
+<!-- ====== Portfolio Section End -->
+
+
+
+
+
+
+<!-- Experience and education -->
+
+<div class="p-4 bg-black" id="about">
+    <h1 class="text-5xl text-center  text-white font-semibold mb-6">My Experience</h1>
+    <div class="container">
+      <div class="flex flex-col md:grid grid-cols-12 text-gray-50">
+        <div class="flex md:contents">
+          <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-white pointer-events-none"></div>
+            </div>
+            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow text-center">
+              <i class="fas fa-check-circle text-white"></i>
+            </div>
+          </div>
+          <div class="hover:bg-purple-800 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full transform hover:scale-95  transition-all duration-200">
+            <h3 class="font-semibold text-lg mb-1">2022 - Present
+            </h3>
+            <h3 class="font-semibold text-lg mb-1">   LEAD DEVELOPER
+            </h3>
+            <p class="leading-tight text-justify w-full">
+                Blockdots, lahore
+            </p>
+          </div>
+        </div>
+        <div class="flex md:contents">
+          <div class="hover:bg-purple-800 col-start-2 col-end-4 mr-10 md:mx-auto relative transition-all duration-200 transform hover:scale-95">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-white pointer-events-none"></div>
+            </div>
+            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-white shadow text-center">
+              <i class="fas fa-check-circle text-white"></i>
+            </div>
+          </div>
+          <div class="hover:bg-purple-800 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full transition-all duration-200 transform hover:scale-95">
+            <h3 class="font-semibold text-lg mb-1">2021 - 2022</h3>
+            <h3 class="font-semibold text-lg mb-1">FULL STACK WEB DEVELOPER</h3>
+            <p class="leading-tight text-justify">
+              Xivyans company, karachi
+            </p>
+          </div>
+        </div>
+        <div class="flex md:contents">
+          <div class="hover:bg-purple-800 col-start-2 col-end-4 mr-10 md:mx-auto relative transition-all   duration-200  transform hover:scale-95">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-white pointer-events-none"></div>
+            </div>
+            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-red-500 shadow text-center">
+              <i class="fas fa-times-circle text-white"></i>
+            </div>
+          </div>
+          <div class="hover:bg-purple-800 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full transition-all duration-200 transform hover:scale-95">
+            <h3 class="font-semibold text-lg mb-1 text-gray-50">2020-2021</h3>
+            <h3 class="font-semibold text-lg mb-1 text-gray-50">UI Designer</h3>
+            <p class="leading-tight text-justify">
+             Megagets , karachi
+            </p>
+          </div>
+        </div>
+        <div class="flex md:contents">
+          <div class=" hover:bg-purple-800  col-start-2 col-end-4 mr-10 md:mx-auto    transform hover:scale-110  relative transition-all duration-200">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-300 pointer-events-none"></div>
+            </div>
+            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-gray-300 shadow text-center">
+              <i class="fas fa-exclamation-circle text-gray-400"></i>
+            </div>
+          </div>
+          <div class="hover:bg-purple-800 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full transition-all duration-200 transform hover:scale-95">
+            <h3 class="font-semibold text-lg mb-1 text-gray-400">2018-2020</h3>
+            <h3 class="font-semibold text-lg mb-1 text-gray-400">JUNIOR GRAPHICS DESIGNER</h3>
+            <p class="leading-tight text-justify">IBA , sukkur
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--  -->
+
+
+
+<!-- Skilss -->
+<section class="text-gray-700 body-font bg-black" id="skills">
+    <h1 class="text-5xl text-center text-white font-semibold mb-6">My Skills</h1>
+    <p class="leading-tight text-2xl text-center w-full sm:w-3/4 lg:w-2/4 m-auto text-white">
+      We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.
+    </p>
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4 text-center justify-center">
+        <div class="p-4 w-full sm:w-1/2 md:w-1/4">
+          <div class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110 hover:bg-violet-500 cursor-pointer">
+            <img src="figma.svg" class="skill mx-auto" alt="">
+            <h2 class="title-font font-medium text-3xl text-white">80%</h2>
+            <p class="leading-relaxed text-white">Figma</p>
+          </div>
+        </div>
+        <div class="p-4 w-full sm:w-1/2 md:w-1/4">
+          <div class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110 hover:bg-violet-500 cursor-pointer">
+            <img src="xd.png" class="skill mx-auto" alt="">
+            <h2 class="title-font font-medium text-3xl text-white">70%</h2>
+            <p class="leading-relaxed text-white">XD</p>
+          </div>
+        </div>
+        <div class="p-4 w-full sm:w-1/2 md:w-1/4">
+          <div class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110 hover:bg-violet-500 cursor-pointer">
+            <img src="wp.png" class="skill mx-auto" alt="">
+            <h2 class="title-font font-medium text-3xl text-white">84%</h2>
+            <p class="leading-relaxed text-white">WordPress</p>
+          </div>
+        </div>
+        <div class="p-4 w-full sm:w-1/2 md:w-1/4">
+          <div class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110 hover:bg-violet-500 cursor-pointer">
+            <img src="react.png" class="skill mx-auto" alt="">
+            <h2 class="title-font font-medium text-3xl text-white">66%</h2>
+            <p class="leading-relaxed text-white">React</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!--  -->
+
+<!-- Contact US -->
+<section class="body-font relative bg-black text-gray-400" id="contact">
+    <div class="overlay"></div>
+    <div class="container mx-auto px-5 py-24">
+      
+      <div class="mb-12 flex w-full flex-col text-center">
+        <h1 class="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">Contact Us</h1>
+        <p class="mx-auto text-base leading-relaxed lg:w-2/3">Feel free to reach out to us! Whether you have a question,
+          feedback, or a collaboration proposal, we'd love to hear from you.
+        </p>
+      </div>
+  
+      <div class="mx-auto md:w-2/3 lg:w-1/2">
+        <div class="-m-2 flex flex-wrap">
+  
+          <!-- form -->
+          <div class="w-1/2 p-2">
+            <div class="relative">
+              <input type="text" id="name" name="name" class="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" placeholder="Name" />
+              <label for="name" class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">Name</label>
+            </div>
+          </div>
+          <div class="w-1/2 p-2">
+            <div class="relative">
+              <input type="email" id="email" name="email" class="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" placeholder="Email" />
+              <label for="email" class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">Email</label>
+            </div>
+          </div>
+          <div class="mt-4 w-full p-2">
+            <div class="relative">
+              <textarea id="message" name="message" class="peer h-32 w-full resize-none rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-6 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900" placeholder="Message"></textarea>
+              <label for="message" class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500">Message</label>
+            </div>
+          </div>
+          <div class="w-full p-2">
+            <button class="mx-auto flex rounded border-0 bg-purple-600 py-2 px-8 text-lg text-white hover:bg-purple-950 focus:outline-none">Send</button>
+          </div>
+  
+  
+          <!-- footer -->
+          <div class="mt-8 w-full border-t border-gray-800 p-2 pt-8 text-center">
+          
+            <p class="my-5 leading-normal">Phase 2/123 <br />colony , karachi</p>
+            <span class="inline-flex">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-5 w-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-4 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-5 w-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-4 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-5 w-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-4 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-5 w-5" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>
+              </a>
+            </span>
+          </div>
+  
+        </div>
+      </div>
+  
+    </div>
+    
+  </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    var navbar = document.getElementById('navbar-sticky');
+    navbar.classList.toggle('hidden');
+});
+
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+// Get the button
+// Get the button element
+let mybutton = document.getElementById("myBtn");
+
+// Show the button when the user scrolls down 20px from the top of the document
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// Smooth scroll to the top of the document when the button is clicked
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+// Attach the topFunction to the button click event
+mybutton.onclick = topFunction;
+
+
+</script>
+
+</body>
+</html>
